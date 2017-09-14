@@ -19,7 +19,7 @@ add_library( opengl_3d_kernel
   ViewportManager.cpp
   )
 
-pkg_check_modules (glfw3 REQUIRED glfw3)
+#pkg_check_modules (glfw3 REQUIRED glfw3)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(GLM REQUIRED)
@@ -77,3 +77,4 @@ add_subdirectory( plugins/Assimp )
 add_subdirectory( plugins/FreeTypeTextRenderer )
 add_subdirectory( plugins/SOILTextureProvider )
 add_subdirectory( plugins/OIIOTextureProvider )
+add_subdirectory( plugins/PointCloudRenderer )

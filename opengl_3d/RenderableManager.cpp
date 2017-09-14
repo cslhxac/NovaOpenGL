@@ -42,7 +42,7 @@ Nova::RenderableManager::RegisterRenderable( std::string path )
     if( renderablePath.has_extension() ){
         std::string ext = renderablePath.extension().native();
         ext = ext.substr(1); // Strip leading '.'
-        //std::cout << "Looking for a factory to load a '" << ext << "' file." << std::endl;
+        std::cout << "Looking for a factory to load a '" << ext << "' file." << std::endl;
         for( auto& factory : _factories ){
             if( factory->AcceptExtension( ext ) )
                 {

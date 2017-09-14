@@ -4,6 +4,7 @@
 #include "shaders/BasicMeshShader.h"
 #include "shaders/BasicLineShader.h"
 #include "shaders/BasicTextShader.h"
+#include "shaders/BasicPointCloudShader.h"
 #include "shaders/ViewportChromeShader.h"
 #include "shaders/ViewportAxisShader.h"
 
@@ -32,6 +33,7 @@ Nova::ShaderManager::ShaderManager(ApplicationFactory& app) : _app(app)
     LOAD_BUILTIN_SHADER( BasicMeshShader );
     LOAD_BUILTIN_SHADER( BasicLineShader );
     LOAD_BUILTIN_SHADER( BasicTextShader );
+    LOAD_BUILTIN_SHADER( BasicPointCloudShader );
     LOAD_BUILTIN_SHADER( ViewportChromeShader );
     LOAD_BUILTIN_SHADER( ViewportAxisShader );
 
